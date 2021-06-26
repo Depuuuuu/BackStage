@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Depuuuuu study </title>
+    <link rel="shortcut icon" href="../static/pic/扑克牌.svg">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/src/magic.css">
+    <script src="../static/src/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/login.js" type="text/javascript"></script>
+    <script src="../static/js/animation.js" type=text/javascript></script>
+    <script src='../static/src/layer/layer.js'></script>
+
+
+    
+    <script type=text/javascript>
+    $(function () {
+    //图片跟着鼠标移动的效果  
+   // 当鼠标指针在指定的元素中移动时，就会发生 mousemove 事件。
+    $(document).mousemove(function(e)  
+    {
+        //获取图片所在的位置，使用css设置相对位置（ "position": "absolute"）
+        //鼠标相对于文档的左边缘的位置（"left": e.pageX ）
+        //鼠标相对于文档的左边缘的位置（ "top": e.pageY ）
+        var x=800;
+        var y=80;
+        $("#xiaoren").css({ "position": "absolute", "left": (e.pageX+30*x)/31 , "top": (e.pageY+30*y)/31});
+    });  
+});
+
+    
+    </script>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+</head>
+
+<body>
+    
+    
+    <!--页头-->
+    
+   
+
+    <!--添加的section结构-->
+    <section class="start_page">
+        
+        
+        
+        
+        
+        
+        <div id="topbar" class="topbar">
+        <div class="topic">
+            
+            
+            
+            <div id="header">
+  <div id="header-con">
+     <div><a href="javascript:;" id="bLogin" onclick="ShowLoginText()">登录</a></div>
+     <div><a href="javascript:;" id="bReg">注册</a></div>
+   </div>
+</div>
+<div id="loginBox">
+    <div class="login-item"><input  type="text" id="InputUsername" placeholder="请输入用户名" /></div>
+    <div class="login-item"><input  type="password" id="InputUserPwd" placeholder="请输入密码"/></div>
+    <div class="login-item"><a href="javascript:;" onclick="Login()">登录</a></div>
+</div>
+            
+            
+            
+            <div class="topside">
+                <div class="logo">
+                    <a href="#"><img src="../static/pic/logo.png" alt="教程" width="100"></a>
+                </div>
+                <ul id="topNav" class="topNav">
+                <li class>首页</li>
+                <li class>教程</li>
+                <li class>对战</li>
+                <li class>实力评估</li>
+                </ul>
+            </div>
+
+
+        </div>
+    
+    </div>
+      <div class="hero">
+          <div id="card0"><img src="../static/pic/82%20(119).png" alt="引导" width="200" class="card0" style="left:10px; top:390px;"></div>
+          
+           <div class="welcome">
+            <img src="../static/pic/Welcome.png" width="800" class="welcome_img"
+                 style="left: 2px;top: 100px;">
+            </div>
+        <!--<div class="hero_container">-->
+            <div class="xiaoren">
+              <img src="../static/pic/女荷官立绘.png" width="400" alt="一个小人应该在这里"
+                   id="xiaoren"
+                   class="xiaoren_img"
+                   style="left: 800px;
+    top: 80px;"></div>
+              <!--</div>-->
+          </div>
+    </section>
+    
+    
+
+
+               
+            
+</body>
+
+</html>
